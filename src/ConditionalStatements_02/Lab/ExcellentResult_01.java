@@ -9,7 +9,7 @@ public class ExcellentResult_01 {
 
         int mark = Integer.parseInt(scanner.nextLine());
 
-        if (mark >= 5){
+        if (mark >= 5) {
             System.out.println("Excellent!");
         }
 

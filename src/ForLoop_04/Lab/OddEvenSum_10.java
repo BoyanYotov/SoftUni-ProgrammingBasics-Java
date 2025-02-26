@@ -11,7 +11,7 @@ public class OddEvenSum_10 {
         int evenNumbers = 0;
         int oddNumbers = 0;
 
-        for (int i = 1; i <= n ; i++) {
+        for (int i = 1; i <= n; i++) {
             int number = Integer.parseInt(scanner.nextLine());
 
             if (i % 2 == 0) {
@@ -21,13 +21,13 @@ public class OddEvenSum_10 {
             }
         }
 
-        if (evenNumbers == oddNumbers){
-                System.out.println("Yes");
-                System.out.printf("Sum = %d",oddNumbers);
-            } else {
-                System.out.println("No");
-                System.out.printf("Diff = %d",Math.abs(oddNumbers-evenNumbers));
-            }
+        if (evenNumbers == oddNumbers) {
+            System.out.println("Yes");
+            System.out.printf("Sum = %d", oddNumbers);
+        } else {
+            System.out.println("No");
+            System.out.printf("Diff = %d", Math.abs(oddNumbers - evenNumbers));
+        }
 
     }
 }

@@ -11,21 +11,21 @@ public class LeftAndRightSumV1_09 {
         int leftNumbers = 0;
         int rightNumbers = 0;
 
-        for (int i = 1; i <= n ; i++) {
+        for (int i = 1; i <= n; i++) {
             int number = Integer.parseInt(scanner.nextLine());
             leftNumbers = leftNumbers + number;
         }
 
-        for (int i = 1; i <= n ; i++) {
+        for (int i = 1; i <= n; i++) {
             int number = Integer.parseInt(scanner.nextLine());
             rightNumbers = rightNumbers + number;
         }
 
-        if (leftNumbers == rightNumbers){
-            System.out.printf("Yes, sum = %d",leftNumbers);
+        if (leftNumbers == rightNumbers) {
+            System.out.printf("Yes, sum = %d", leftNumbers);
         } else {
-            int diff = Math.abs(leftNumbers-rightNumbers);
-            System.out.printf("No, diff = %d",diff);
+            int diff = Math.abs(leftNumbers - rightNumbers);
+            System.out.printf("No, diff = %d", diff);
         }
 
     }

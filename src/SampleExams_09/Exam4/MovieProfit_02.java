@@ -12,8 +12,8 @@ public class MovieProfit_02 {
         double price = Double.parseDouble(scanner.nextLine());
         double cinema = Double.parseDouble(scanner.nextLine());
 
-        double profit = (days * tickets * price)* (1 - (cinema / 100));
+        double profit = (days * tickets * price) * (1 - (cinema / 100));
 
-        System.out.printf("The profit from the movie %s is %.2f lv.",name,profit);
+        System.out.printf("The profit from the movie %s is %.2f lv.", name, profit);
     }
 }

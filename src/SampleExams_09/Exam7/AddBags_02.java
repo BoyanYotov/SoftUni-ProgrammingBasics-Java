@@ -14,9 +14,9 @@ public class AddBags_02 {
 
         double extraFee = 0;
 
-        if (luggageKgs < 10){
+        if (luggageKgs < 10) {
             extraFee = priceKgOver20 * 0.2;
-        } else if (luggageKgs <= 20){
+        } else if (luggageKgs <= 20) {
             extraFee = priceKgOver20 * 0.5;
         } else {
             extraFee = priceKgOver20;
@@ -24,7 +24,7 @@ public class AddBags_02 {
 
         double daysFee = 0;
 
-        if (daysUntilTrip > 30){
+        if (daysUntilTrip > 30) {
             extraFee *= 1.1;
         } else if (daysUntilTrip >= 7) {
             extraFee *= 1.15;
@@ -34,6 +34,6 @@ public class AddBags_02 {
 
         double totalPrice = extraFee * luggagePieces;
 
-        System.out.printf("The total price of bags is: %.2f lv. ",totalPrice);
+        System.out.printf("The total price of bags is: %.2f lv. ", totalPrice);
     }
 }

@@ -16,11 +16,11 @@ public class ChristmasTree_07 {
             if (i == 1) {
                 System.out.printf(" | %n");
             } else {
-                for (int j = 1; j <= i-1; j++) {
+                for (int j = 1; j <= i - 1; j++) {
                     System.out.print("*");
                 }
                 System.out.print(" | ");
-                for (int j = 1; j <= i-1 ; j++){
+                for (int j = 1; j <= i - 1; j++) {
                     System.out.print("*");
                 }
                 System.out.println();

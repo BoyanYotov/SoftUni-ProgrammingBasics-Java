@@ -12,14 +12,14 @@ public class NameGame_09 {
         int maxPoints = 0;
         String winner = "";
 
-        while (!name.equals("Stop")){
+        while (!name.equals("Stop")) {
             int length = name.length();
             totalPoins = 0;
 
-             for (int i = 0; i < length ; i++) {
+            for (int i = 0; i < length; i++) {
                 int currentNumber = Integer.parseInt(scanner.nextLine());
                 char first = (char) currentNumber;
-                if (first == name.charAt(i)){
+                if (first == name.charAt(i)) {
                     points = 10;
                 } else {
                     points = 2;
@@ -27,14 +27,14 @@ public class NameGame_09 {
                 totalPoins += points;
             }
 
-            if (totalPoins > maxPoints){
+            if (totalPoins > maxPoints) {
                 maxPoints = totalPoins;
                 winner = name;
-            } else if (totalPoins == maxPoints){
+            } else if (totalPoins == maxPoints) {
                 winner = name;
             }
             name = scanner.nextLine();
         }
-        System.out.printf("The winner is %s with %d points!",winner,maxPoints);
+        System.out.printf("The winner is %s with %d points!", winner, maxPoints);
     }
 }

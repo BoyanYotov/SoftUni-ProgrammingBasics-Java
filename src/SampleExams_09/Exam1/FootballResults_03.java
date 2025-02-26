@@ -15,9 +15,9 @@ public class FootballResults_03 {
             char a = result.charAt(0);
             char b = result.charAt(2);
 
-            if (a > b){
+            if (a > b) {
                 winsCount++;
-            } else if (a < b){
+            } else if (a < b) {
                 failsCount++;
             } else {
                 drawnCount++;
@@ -25,7 +25,7 @@ public class FootballResults_03 {
         }
 
         System.out.printf("Team won %d games.%n", winsCount);
-        System.out.printf("Team lost %d games.%n",failsCount);
-        System.out.printf("Drawn games: %d",drawnCount);
+        System.out.printf("Team lost %d games.%n", failsCount);
+        System.out.printf("Drawn games: %d", drawnCount);
     }
 }

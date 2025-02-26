@@ -12,12 +12,12 @@ public class Pets_05 {
         double foodCat = Double.parseDouble(scanner.nextLine());
         double foodTurtle = Double.parseDouble(scanner.nextLine());
 
-        double consumptionTotal = days*foodCat + days*foodDog + days*foodTurtle/1000;
+        double consumptionTotal = days * foodCat + days * foodDog + days * foodTurtle / 1000;
 
-        if (foodLeft > consumptionTotal){
-            System.out.printf("%.0f kilos of food left.",Math.floor(foodLeft - consumptionTotal));
+        if (foodLeft > consumptionTotal) {
+            System.out.printf("%.0f kilos of food left.", Math.floor(foodLeft - consumptionTotal));
         } else {
-            System.out.printf("%.0f more kilos of food are needed.",Math.ceil(consumptionTotal -foodLeft));
+            System.out.printf("%.0f more kilos of food are needed.", Math.ceil(consumptionTotal - foodLeft));
         }
 
     }

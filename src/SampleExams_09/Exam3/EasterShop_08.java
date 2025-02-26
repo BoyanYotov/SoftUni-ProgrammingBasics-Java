@@ -10,25 +10,25 @@ public class EasterShop_08 {
         String command = scanner.nextLine();
         int soldEggs = 0;
 
-        while(!command.equals("Close")){
+        while (!command.equals("Close")) {
             int newEggs = Integer.parseInt(scanner.nextLine());
 
-            if (command.equals("Buy")){
-                if (newEggs > intitalQuantity){
+            if (command.equals("Buy")) {
+                if (newEggs > intitalQuantity) {
                     System.out.println("Not enough eggs in store!");
                     System.out.printf("You can buy only %d.", intitalQuantity);
                     return;
                 }
                 intitalQuantity -= newEggs;
                 soldEggs += newEggs;
-            } else if (command.equals("Fill")){
+            } else if (command.equals("Fill")) {
                 intitalQuantity += newEggs;
             }
             command = scanner.nextLine();
         }
 
         System.out.println("Store is closed!");
-        System.out.printf("%d eggs sold.",soldEggs);
+        System.out.printf("%d eggs sold.", soldEggs);
 
     }
 }

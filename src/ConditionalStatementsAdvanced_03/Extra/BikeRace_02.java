@@ -11,13 +11,13 @@ public class BikeRace_02 {
         String type = scanner.nextLine();
         double fee = 0;
 
-        switch (type){
+        switch (type) {
             case "trail":
-            fee = (juniors * 5.50) + (seniors * 7);
+                fee = (juniors * 5.50) + (seniors * 7);
                 break;
             case "cross-country":
-            fee = (juniors * 8) + (seniors * 9.5);
-                if (juniors + seniors >= 50){
+                fee = (juniors * 8) + (seniors * 9.5);
+                if (juniors + seniors >= 50) {
                     fee *= 0.75;
                 }
                 break;
@@ -29,9 +29,9 @@ public class BikeRace_02 {
                 break;
         }
 
-       fee *= 0.95;
+        fee *= 0.95;
 
-        System.out.printf("%.2f",fee);
+        System.out.printf("%.2f", fee);
 
     }
 }

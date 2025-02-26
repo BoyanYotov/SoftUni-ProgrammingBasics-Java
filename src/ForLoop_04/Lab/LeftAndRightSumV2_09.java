@@ -16,7 +16,7 @@ public class LeftAndRightSumV2_09 {
             int currentNum = Integer.parseInt(scanner.nextLine());
 
             if (i <= n) {
-                leftSum = leftSum +currentNum;
+                leftSum = leftSum + currentNum;
             } else {
                 rightSum = rightSum + currentNum;
             }

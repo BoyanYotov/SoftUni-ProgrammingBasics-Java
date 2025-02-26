@@ -10,24 +10,24 @@ public class HalfSumElement_02 {
         int total = 0;
         int maxValue = Integer.MIN_VALUE;
 
-        for (int i = 1; i <=n ; i++) {
+        for (int i = 1; i <= n; i++) {
             int number = Integer.parseInt(scanner.nextLine());
 
             total += number;
 
-            if (number > maxValue){
+            if (number > maxValue) {
                 maxValue = number;
             }
         }
 
-        if (maxValue == (total-maxValue)){
-                System.out.println("Yes");
-                System.out.printf("Sum = %d",maxValue);
-            } else {
-                int diff = Math.abs(maxValue-(total-maxValue));
-                System.out.println("No");
-                System.out.printf("Diff = %d",diff);
-            }
+        if (maxValue == (total - maxValue)) {
+            System.out.println("Yes");
+            System.out.printf("Sum = %d", maxValue);
+        } else {
+            int diff = Math.abs(maxValue - (total - maxValue));
+            System.out.println("No");
+            System.out.printf("Diff = %d", diff);
+        }
 
     }
 }

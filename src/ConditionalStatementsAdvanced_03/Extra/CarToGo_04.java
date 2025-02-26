@@ -12,32 +12,32 @@ public class CarToGo_04 {
         String carType = "";
         double price = 0;
 
-        if (budget <= 100){
+        if (budget <= 100) {
             carClass = "Economy class";
-            if  (season.equals("Summer")){
+            if (season.equals("Summer")) {
                 carType = "Cabrio";
                 price = budget * 0.35;
-            } else if (season.equals("Winter")){
+            } else if (season.equals("Winter")) {
                 carType = "Jeep";
                 price = budget * 0.65;
             }
-        } else if (budget > 100 && budget <= 500){
+        } else if (budget > 100 && budget <= 500) {
             carClass = "Compact class";
-            if (season.equals("Summer")){
+            if (season.equals("Summer")) {
                 carType = "Cabrio";
                 price = budget * 0.45;
-            } else if (season.equals("Winter")){
+            } else if (season.equals("Winter")) {
                 carType = "Jeep";
                 price = budget * 0.8;
             }
-        } else if (budget > 500){
+        } else if (budget > 500) {
             carClass = "Luxury class";
-                carType = "Jeep";
-                price = budget * 0.9;
+            carType = "Jeep";
+            price = budget * 0.9;
         }
 
-        System.out.printf("%s%n",carClass);
-        System.out.printf("%s - %.2f",carType,price);
+        System.out.printf("%s%n", carClass);
+        System.out.printf("%s - %.2f", carType, price);
 
     }
 }

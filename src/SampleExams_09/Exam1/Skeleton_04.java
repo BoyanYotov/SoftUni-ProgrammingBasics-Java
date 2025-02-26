@@ -13,13 +13,13 @@ public class Skeleton_04 {
 
         int controllaTotal = controllaMinutes * 60 + controllaSeconds;
         double slowSeconds = (length / 120) * 2.5;
-        double martinTime = (length/100)*secondsFor100M-slowSeconds;
+        double martinTime = (length / 100) * secondsFor100M - slowSeconds;
 
-        if (martinTime<=controllaTotal){
+        if (martinTime <= controllaTotal) {
             System.out.printf("Marin Bangiev won an Olympic quota!%n");
-            System.out.printf("His time is %.3f.",martinTime);
+            System.out.printf("His time is %.3f.", martinTime);
         } else {
-            System.out.printf("No, Marin failed! He was %.3f second slower.",Math.abs(controllaTotal-martinTime));
+            System.out.printf("No, Marin failed! He was %.3f second slower.", Math.abs(controllaTotal - martinTime));
         }
     }
 }

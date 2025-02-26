@@ -14,13 +14,13 @@ public class Graduation_08 {
 
         while (year <= 12) {
 
-            if (failsCount > 1){
+            if (failsCount > 1) {
                 break;
             }
 
             double grade = Double.parseDouble(scanner.nextLine());
 
-            if (grade < 4){
+            if (grade < 4) {
                 failsCount++;
                 continue;
             }
@@ -28,7 +28,7 @@ public class Graduation_08 {
             year++;
         }
 
-        if (failsCount > 1){
+        if (failsCount > 1) {
             System.out.printf("%s has been excluded at %d grade", name, year);
         } else {
             double average = gradesSum / 12;

@@ -34,9 +34,9 @@ public class SumOfTwoNumbers_09 {
 
         if (isFound) {
             System.out.printf("Combination N:%d ", counter);
-            System.out.printf("(%d + %d = %d)", firstDigit,lastDigit,firstDigit+lastDigit);
+            System.out.printf("(%d + %d = %d)", firstDigit, lastDigit, firstDigit + lastDigit);
         } else {
-            System.out.printf("%d combinations - neither equals %d",counter,magicNumber);
+            System.out.printf("%d combinations - neither equals %d", counter, magicNumber);
         }
     }
 }

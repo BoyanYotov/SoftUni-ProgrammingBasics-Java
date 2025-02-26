@@ -11,8 +11,8 @@ public class PaintingEggs_06 {
         int quantity = Integer.parseInt(scanner.nextLine());
         double price = 0;
 
-        if (size.equals("Large")){
-            switch (colour){
+        if (size.equals("Large")) {
+            switch (colour) {
                 case "Red":
                     price = 16;
                     break;
@@ -23,8 +23,8 @@ public class PaintingEggs_06 {
                     price = 9;
                     break;
             }
-        } else if (size.equals("Medium")){
-            switch (colour){
+        } else if (size.equals("Medium")) {
+            switch (colour) {
                 case "Red":
                     price = 13;
                     break;
@@ -35,8 +35,8 @@ public class PaintingEggs_06 {
                     price = 7;
                     break;
             }
-        } else if (size.equals("Small")){
-            switch (colour){
+        } else if (size.equals("Small")) {
+            switch (colour) {
                 case "Red":
                     price = 9;
                     break;
@@ -50,6 +50,6 @@ public class PaintingEggs_06 {
         }
 
         double total = quantity * price * 0.65;
-        System.out.printf("%.2f leva.",total);
+        System.out.printf("%.2f leva.", total);
     }
 }

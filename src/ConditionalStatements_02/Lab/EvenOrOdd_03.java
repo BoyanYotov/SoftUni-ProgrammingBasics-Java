@@ -9,7 +9,7 @@ public class EvenOrOdd_03 {
 
         int number = Integer.parseInt(scanner.nextLine());
 
-        if (number % 2 == 0){
+        if (number % 2 == 0) {
             System.out.println("even");
         } else {
             System.out.println("odd");

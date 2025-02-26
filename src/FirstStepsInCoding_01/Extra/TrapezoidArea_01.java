@@ -3,7 +3,7 @@ package FirstStepsInCoding_01.Extra;
 import java.util.Scanner;
 
 public class TrapezoidArea_01 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -11,7 +11,7 @@ public class TrapezoidArea_01 {
         double b2 = Double.parseDouble(scanner.nextLine());
         double h = Double.parseDouble(scanner.nextLine());
 
-        double area = (b1 + b2) * h/2;
+        double area = (b1 + b2) * h / 2;
 
         System.out.printf("%.2f", area);
 

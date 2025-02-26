@@ -8,7 +8,7 @@ public class Numbers1ToNWithStep3_03 {
 
         int n = Integer.parseInt(scanner.nextLine());
 
-        for (int i = 1; i <= n ; i+=3) {
+        for (int i = 1; i <= n; i += 3) {
             System.out.println(i);
         }
 

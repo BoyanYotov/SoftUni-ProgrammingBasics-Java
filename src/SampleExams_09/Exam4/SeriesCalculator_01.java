@@ -13,6 +13,6 @@ public class SeriesCalculator_01 {
 
         double totalEpisode = seasons * episodes * (single * 1.2) + (seasons * 10);
 
-        System.out.printf("Total time needed to watch the %s series is %.0f minutes.",series,Math.floor(totalEpisode));
+        System.out.printf("Total time needed to watch the %s series is %.0f minutes.", series, Math.floor(totalEpisode));
     }
 }

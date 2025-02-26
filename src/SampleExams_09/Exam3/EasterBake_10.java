@@ -20,11 +20,11 @@ public class EasterBake_10 {
             sugarTotal += sugar;
             flowerTotal += flower;
 
-            if (sugar > maxValueSugar){
+            if (sugar > maxValueSugar) {
                 maxValueSugar = sugar;
             }
 
-            if (flower > maxValueFlower){
+            if (flower > maxValueFlower) {
                 maxValueFlower = flower;
             }
         }
@@ -32,8 +32,8 @@ public class EasterBake_10 {
         double packsSugar = Math.ceil(sugarTotal * 1.0 / 950);
         double packsFlower = Math.ceil(flowerTotal * 1.0 / 750);
 
-        System.out.printf("Sugar: %.0f%n",packsSugar);
-        System.out.printf("Flour: %.0f%n",packsFlower);
-        System.out.printf("Max used flour is %d grams, max used sugar is %d grams.",maxValueFlower,maxValueSugar);
+        System.out.printf("Sugar: %.0f%n", packsSugar);
+        System.out.printf("Flour: %.0f%n", packsFlower);
+        System.out.printf("Max used flour is %d grams, max used sugar is %d grams.", maxValueFlower, maxValueSugar);
     }
 }

@@ -20,6 +20,6 @@ public class ChristmasPreparation {
         double grandTotal = (paperTotal + clothTotal + glueTotal);
         double total = grandTotal * (1 - discountPercentage);
 
-        System.out.printf("%.3f",total);
+        System.out.printf("%.3f", total);
     }
 }

@@ -32,7 +32,7 @@ public class TruckDriver_06 {
 
         total *= 0.9;
 
-        System.out.printf("%.2f",total);
+        System.out.printf("%.2f", total);
 
     }
 }

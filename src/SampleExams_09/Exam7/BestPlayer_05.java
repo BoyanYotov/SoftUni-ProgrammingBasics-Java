@@ -11,13 +11,13 @@ public class BestPlayer_05 {
 
         String name = scanner.nextLine();
 
-        while (!name.equals("END")){
+        while (!name.equals("END")) {
             int goals = Integer.parseInt(scanner.nextLine());
-            if (goals > bestGoals){
+            if (goals > bestGoals) {
                 bestGoals = goals;
                 bestPlayer = name;
             }
-            if (goals >= 10){
+            if (goals >= 10) {
                 break;
             }
             name = scanner.nextLine();
@@ -25,10 +25,10 @@ public class BestPlayer_05 {
 
         System.out.printf("%s is the best player!%n", bestPlayer);
 
-        if (bestGoals >= 3){
-            System.out.printf("He has scored %d goals and made a hat-trick !!!%n",bestGoals);
+        if (bestGoals >= 3) {
+            System.out.printf("He has scored %d goals and made a hat-trick !!!%n", bestGoals);
         } else {
-            System.out.printf("He has scored %d goals.",bestGoals);
+            System.out.printf("He has scored %d goals.", bestGoals);
         }
     }
 }

@@ -11,40 +11,42 @@ public class EasterDecoration_12 {
         double grandTotal = 0;
         int items = 0;
 
-        for (int i = 1; i <= people ; i++) {
-                    items = 0;
-                    purchasePricePerson = 0;
+        for (int i = 1; i <= people; i++) {
+            items = 0;
+            purchasePricePerson = 0;
 
             String purchase = scanner.nextLine();
 
-            while (!purchase.equals("Finish")){
-                    switch (purchase){
-                        case "basket":
-                            purchasePricePerson += 1.50;
-                            items++;
-                            break;
-                        case "wreath":
-                            purchasePricePerson += 3.80;
-                            items++;
-                            break;
-                        case "chocolate bunny":
-                            purchasePricePerson += 7;
-                            items++;
-                            break;
-                    }
+            while (!purchase.equals("Finish")) {
+                switch (purchase) {
+                    case "basket":
+                        purchasePricePerson += 1.50;
+                        items++;
+                        break;
+                    case "wreath":
+                        purchasePricePerson += 3.80;
+                        items++;
+                        break;
+                    case "chocolate bunny":
+                        purchasePricePerson += 7;
+                        items++;
+                        break;
+                }
 
-                    purchase = scanner.nextLine();
+                purchase = scanner.nextLine();
             }
 
-            if (items % 2 == 0){
-                    {purchasePricePerson *= 0.8;};
+            if (items % 2 == 0) {
+                {
+                    purchasePricePerson *= 0.8;
+                }
             }
 
             grandTotal += purchasePricePerson;
 
-            System.out.printf("You purchased %d items for %.2f leva.%n",items, purchasePricePerson);
+            System.out.printf("You purchased %d items for %.2f leva.%n", items, purchasePricePerson);
         }
 
-        System.out.printf("Average bill per client is: %.2f leva.",grandTotal/people);
+        System.out.printf("Average bill per client is: %.2f leva.", grandTotal / people);
     }
 }

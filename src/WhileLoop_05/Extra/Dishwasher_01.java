@@ -8,7 +8,7 @@ public class Dishwasher_01 {
         Scanner scanner = new Scanner(System.in);
 
         int bottles = Integer.parseInt(scanner.nextLine());
-        int milliliters = bottles*750;
+        int milliliters = bottles * 750;
         int count = 0;
 
         int spent = 0;
@@ -17,12 +17,12 @@ public class Dishwasher_01 {
 
         String command = scanner.nextLine();
 
-        while (!command.equals("End")){
+        while (!command.equals("End")) {
 
             int dishes = Integer.parseInt(command);
             count++;
 
-            if (count % 3 == 0){
+            if (count % 3 == 0) {
                 spent = dishes * 15;
                 countPots += dishes;
                 milliliters -= spent;
@@ -32,7 +32,7 @@ public class Dishwasher_01 {
                 milliliters -= spent;
             }
 
-            if (milliliters < 0){
+            if (milliliters < 0) {
                 break;
             }
 

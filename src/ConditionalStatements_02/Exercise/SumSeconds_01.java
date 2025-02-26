@@ -11,15 +11,15 @@ public class SumSeconds_01 {
         int b = Integer.parseInt(scanner.nextLine());
         int c = Integer.parseInt(scanner.nextLine());
 
-        int total = a+b+c;
+        int total = a + b + c;
 
-        int minutes = total /60;
+        int minutes = total / 60;
         int seconds = total % 60;
 
         if (seconds < 10) {
-            System.out.printf("%d:0%d",minutes, seconds);
+            System.out.printf("%d:0%d", minutes, seconds);
         } else {
-            System.out.printf("%d:%d",minutes, seconds);
+            System.out.printf("%d:%d", minutes, seconds);
         }
 
     }

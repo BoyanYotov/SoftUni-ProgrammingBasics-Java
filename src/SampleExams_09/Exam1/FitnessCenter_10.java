@@ -17,7 +17,7 @@ public class FitnessCenter_10 {
         int sportPeople = 0;
         int proteinPeople = 0;
 
-        for (int i = 1; i <=people ; i++) {
+        for (int i = 1; i <= people; i++) {
             String activity = scanner.nextLine();
 
             if (activity.equals("Back")) {
@@ -44,13 +44,13 @@ public class FitnessCenter_10 {
         double sportPeoplePercentage = sportPeople * 1.0 / people * 100;
         double proteinPeoplePercentage = proteinPeople * 1.0 / people * 100;
 
-        System.out.printf("%d - back%n",back);
-        System.out.printf("%d - chest%n",chest);
-        System.out.printf("%d - legs%n",legs);
-        System.out.printf("%d - abs%n",abs);
-        System.out.printf("%d - protein shake%n",shake);
-        System.out.printf("%d - protein bar%n",bars);
-        System.out.printf("%.2f%% - work out%n",sportPeoplePercentage);
-        System.out.printf("%.2f%% - protein",proteinPeoplePercentage);
+        System.out.printf("%d - back%n", back);
+        System.out.printf("%d - chest%n", chest);
+        System.out.printf("%d - legs%n", legs);
+        System.out.printf("%d - abs%n", abs);
+        System.out.printf("%d - protein shake%n", shake);
+        System.out.printf("%d - protein bar%n", bars);
+        System.out.printf("%.2f%% - work out%n", sportPeoplePercentage);
+        System.out.printf("%.2f%% - protein", proteinPeoplePercentage);
     }
 }

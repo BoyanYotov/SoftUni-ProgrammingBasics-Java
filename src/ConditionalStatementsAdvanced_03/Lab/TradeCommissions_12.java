@@ -11,31 +11,31 @@ public class TradeCommissions_12 {
         boolean validInput = true;
         double commission = 0;
 
-        if (town.equals("Sofia")){
+        if (town.equals("Sofia")) {
             if (selling >= 0 && selling <= 500) {
                 commission = selling * 0.05;
             } else if (selling > 500 && selling <= 1000) {
                 commission = selling * 0.07;
             } else if (selling > 1000 && selling <= 10000) {
                 commission = selling * 0.08;
-            } else if (selling > 10000){
+            } else if (selling > 10000) {
                 commission = selling * 0.12;
             } else {
                 validInput = false;
             }
-        } else if (town.equals("Varna")){
+        } else if (town.equals("Varna")) {
             if (selling >= 0 && selling <= 500) {
                 commission = selling * 0.045;
             } else if (selling > 500 && selling <= 1000) {
                 commission = selling * 0.075;
             } else if (selling > 1000 && selling <= 10000) {
                 commission = selling * 0.1;
-            } else if (selling > 10000){
+            } else if (selling > 10000) {
                 commission = selling * 0.13;
             } else {
                 validInput = false;
             }
-        } else if (town.equals("Plovdiv")){
+        } else if (town.equals("Plovdiv")) {
             if (selling >= 0 && selling <= 500) {
                 commission = selling * 0.055;
             } else if (selling > 500 && selling <= 1000) {
@@ -51,8 +51,8 @@ public class TradeCommissions_12 {
             validInput = false;
         }
 
-        if (validInput){
-            System.out.printf("%.2f",commission);
+        if (validInput) {
+            System.out.printf("%.2f", commission);
         } else {
             System.out.print("error");
         }

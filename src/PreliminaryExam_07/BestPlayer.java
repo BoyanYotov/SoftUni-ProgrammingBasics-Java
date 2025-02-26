@@ -27,7 +27,7 @@ public class BestPlayer {
                     trick = true;
                 }
 
-                if (goals>=10){
+                if (goals >= 10) {
                     break;
                 }
 

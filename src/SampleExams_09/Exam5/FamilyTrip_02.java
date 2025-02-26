@@ -13,16 +13,16 @@ public class FamilyTrip_02 {
 
         double totalNights = nights * pricePerNight;
 
-        if (nights > 7){
+        if (nights > 7) {
             totalNights = nights * (pricePerNight * 0.95);
         }
 
         double grandTotal = totalNights + (budget * extraExpenses / 100);
 
-        if (grandTotal <= budget){
-            System.out.printf("Ivanovi will be left with %.2f leva after vacation.",budget-grandTotal);
+        if (grandTotal <= budget) {
+            System.out.printf("Ivanovi will be left with %.2f leva after vacation.", budget - grandTotal);
         } else {
-            System.out.printf("%.2f leva needed.",grandTotal-budget);
+            System.out.printf("%.2f leva needed.", grandTotal - budget);
         }
     }
 }

@@ -12,8 +12,8 @@ public class CatWalking_03 {
 
         int caloriesBurnt = (walksQty * minutesWalk) * 5;
 
-        if (caloriesBurnt >= caloriesIntake / 2){
-            System.out.printf("Yes, the walk for your cat is enough. Burned calories per day: %d.",caloriesBurnt);
+        if (caloriesBurnt >= caloriesIntake / 2) {
+            System.out.printf("Yes, the walk for your cat is enough. Burned calories per day: %d.", caloriesBurnt);
         } else {
             System.out.printf("No, the walk for your cat is not enough. Burned calories per day: %d.", caloriesBurnt);
         }

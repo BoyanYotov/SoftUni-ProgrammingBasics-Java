@@ -10,10 +10,10 @@ public class EasterLunch_01 {
         int eggsQuantity = Integer.parseInt(scanner.nextLine());
         int candyQuantity = Integer.parseInt(scanner.nextLine());
 
-        double total =  (cakesQuantity * 3.20) + (eggsQuantity * 4.35) +
-                        (eggsQuantity * 12*0.15) + (candyQuantity * 5.40);
+        double total = (cakesQuantity * 3.20) + (eggsQuantity * 4.35) +
+                (eggsQuantity * 12 * 0.15) + (candyQuantity * 5.40);
 
-        System.out.printf("%.2f",total);
+        System.out.printf("%.2f", total);
 
     }
 }

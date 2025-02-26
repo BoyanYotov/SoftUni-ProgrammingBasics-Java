@@ -14,30 +14,30 @@ public class FishingBoat_04 {
 
         switch (season) {
             case "Spring":
-            rent = 3000;
-            if (people <= 6){
-                rent *= 0.9;
-            } else if (people <= 11) {
-                rent *= 0.85;
-            } else {
-                rent *= 0.75;
-            }
-                break;
-            case "Summer","Autumn":
-            rent = 4200;
-                if (people <= 6){
+                rent = 3000;
+                if (people <= 6) {
                     rent *= 0.9;
-                } else if (people <= 11){
+                } else if (people <= 11) {
+                    rent *= 0.85;
+                } else {
+                    rent *= 0.75;
+                }
+                break;
+            case "Summer", "Autumn":
+                rent = 4200;
+                if (people <= 6) {
+                    rent *= 0.9;
+                } else if (people <= 11) {
                     rent *= 0.85;
                 } else {
                     rent *= 0.75;
                 }
                 break;
             case "Winter":
-            rent = 2600;
-            if (people <= 6){
+                rent = 2600;
+                if (people <= 6) {
                     rent *= 0.9;
-                } else if (people <= 11){
+                } else if (people <= 11) {
                     rent *= 0.85;
                 } else {
                     rent *= 0.75;
@@ -45,14 +45,14 @@ public class FishingBoat_04 {
                 break;
         }
 
-        if (!season.equals("Autumn") && people % 2 ==0 ){
+        if (!season.equals("Autumn") && people % 2 == 0) {
             rent *= 0.95;
         }
 
-        if (rent <= budget){
-            System.out.printf("Yes! You have %.2f leva left.",Math.abs(budget-rent));
+        if (rent <= budget) {
+            System.out.printf("Yes! You have %.2f leva left.", Math.abs(budget - rent));
         } else {
-            System.out.printf("Not enough money! You need %.2f leva.",Math.abs(budget-rent));
+            System.out.printf("Not enough money! You need %.2f leva.", Math.abs(budget - rent));
         }
 
     }

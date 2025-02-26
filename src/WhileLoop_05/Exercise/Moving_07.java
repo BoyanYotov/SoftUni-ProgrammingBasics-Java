@@ -25,10 +25,10 @@ public class Moving_07 {
             volume -= takes;
         }
 
-        if (command.equals("Done")){
-            System.out.printf("%d Cubic meters left.",volume);
+        if (command.equals("Done")) {
+            System.out.printf("%d Cubic meters left.", volume);
         } else {
-            System.out.printf("No more free space! You need %d Cubic meters more.",Math.abs(volume));
+            System.out.printf("No more free space! You need %d Cubic meters more.", Math.abs(volume));
         }
 
     }

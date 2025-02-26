@@ -9,9 +9,9 @@ public class WorkingHours_07 {
         int hours = Integer.parseInt(scanner.nextLine());
         String day = scanner.nextLine();
 
-        switch (day){
-            case "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday":
-                if (hours >= 10 && hours <= 18){
+        switch (day) {
+            case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday":
+                if (hours >= 10 && hours <= 18) {
                     System.out.print("open");
                 } else {
                     System.out.print("closed");

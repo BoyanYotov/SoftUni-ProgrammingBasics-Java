@@ -12,15 +12,16 @@ public class Harvest_03 {
         int neededWine = Integer.parseInt(scanner.nextLine());
         int workers = Integer.parseInt(scanner.nextLine());
 
-        double wineProduced = ((area*0.4) * grapesPerMeter)/2.5;
+        double wineProduced = ((area * 0.4) * grapesPerMeter) / 2.5;
 
-        if (wineProduced < neededWine){
-            double difference = Math.floor(neededWine-wineProduced);
-            System.out.printf("It will be a tough winter! More %.0f liters wine needed.",difference);
+        if (wineProduced < neededWine) {
+            double difference = Math.floor(neededWine - wineProduced);
+            System.out.printf("It will be a tough winter! More %.0f liters wine needed.", difference);
         } else {
-            double difference = Math.floor(wineProduced-neededWine);
-            double diffPerPerson = Math.ceil(difference/workers);
-            System.out.printf("Good harvest this year! Total wine: %.0f liters.%n%.0f liters left -> %.0f liters per person.",wineProduced,difference,diffPerPerson);
+            double difference = Math.floor(wineProduced - neededWine);
+            double diffPerPerson = Math.ceil(difference / workers);
+            System.out.printf("Good harvest this year! Total wine: %.0f liters.%n" +
+                    "%.0f liters left -> %.0f liters per person.", wineProduced, difference, diffPerPerson);
         }
 
     }

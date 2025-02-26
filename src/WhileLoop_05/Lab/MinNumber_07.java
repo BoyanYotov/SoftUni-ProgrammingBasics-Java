@@ -10,11 +10,11 @@ public class MinNumber_07 {
         String input = scanner.nextLine();
         int minValue = Integer.MAX_VALUE;
 
-        while (!input.equals("Stop")){
+        while (!input.equals("Stop")) {
 
             int number = Integer.parseInt(input);
 
-            if (number < minValue){
+            if (number < minValue) {
                 minValue = number;
             }
 

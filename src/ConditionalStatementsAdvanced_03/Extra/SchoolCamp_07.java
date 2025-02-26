@@ -52,15 +52,18 @@ public class SchoolCamp_07 {
                 break;
         }
 
-                if (studentsQuantity >= 50){
-                    totalAmount = totalAmount * 0.5;}
-                if (studentsQuantity >= 20 && studentsQuantity < 50){
-                    totalAmount = totalAmount * 0.85;}
-                if (studentsQuantity >=10 && studentsQuantity < 20){
-                    totalAmount = totalAmount * 0.95;}
-
-        System.out.printf("%s %.2f lv.",sport, totalAmount);
-
+        if (studentsQuantity >= 50) {
+            totalAmount = totalAmount * 0.5;
         }
+        if (studentsQuantity >= 20 && studentsQuantity < 50) {
+            totalAmount = totalAmount * 0.85;
+        }
+        if (studentsQuantity >= 10 && studentsQuantity < 20) {
+            totalAmount = totalAmount * 0.95;
+        }
+
+        System.out.printf("%s %.2f lv.", sport, totalAmount);
+
     }
+}
 

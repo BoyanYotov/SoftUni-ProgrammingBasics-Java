@@ -32,7 +32,7 @@ public class EqualPairs_08 {
             }
         }
 
-        if (counter == n-1) {
+        if (counter == n - 1) {
             System.out.printf("Yes, value=%d", value);
         } else {
             System.out.printf("No, maxdiff=%d", maxDifference);

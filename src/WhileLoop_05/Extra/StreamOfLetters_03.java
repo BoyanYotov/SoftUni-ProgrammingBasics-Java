@@ -15,7 +15,7 @@ public class StreamOfLetters_03 {
         String finished = "";
         String sentence = "";
 
-        while (true){
+        while (true) {
             if (c >= 1 && o >= 1 && n >= 1) {
                 c = 0;
                 n = 0;
@@ -26,13 +26,13 @@ public class StreamOfLetters_03 {
                 continue;
             }
 
-            if (symbol.equals("End")){
+            if (symbol.equals("End")) {
                 break;
             }
 
             char letter = symbol.charAt(0);
 
-            if ((letter>=97 && letter<=122) || (letter>=65 && letter<=90)) {
+            if ((letter >= 97 && letter <= 122) || (letter >= 65 && letter <= 90)) {
                 switch (symbol) {
                     case "n":
                         n++;

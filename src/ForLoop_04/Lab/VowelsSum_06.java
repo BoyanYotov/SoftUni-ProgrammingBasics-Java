@@ -9,24 +9,24 @@ public class VowelsSum_06 {
         String text = scanner.nextLine();
         int sum = 0;
 
-        for (int i = 0; i <= text.length()-1 ; i++) {
+        for (int i = 0; i <= text.length() - 1; i++) {
             char symbol = text.charAt(i);
 
-            switch(symbol){
+            switch (symbol) {
                 case 'a':
-                sum = sum + 1;
+                    sum = sum + 1;
                     break;
                 case 'e':
-                sum = sum + 2;
+                    sum = sum + 2;
                     break;
                 case 'i':
-                sum = sum + 3;
+                    sum = sum + 3;
                     break;
                 case 'o':
-                   sum = sum + 4;
+                    sum = sum + 4;
                     break;
                 case 'u':
-                sum = sum + 5;
+                    sum = sum + 5;
                     break;
             }
         }

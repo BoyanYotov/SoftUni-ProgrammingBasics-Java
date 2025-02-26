@@ -14,11 +14,11 @@ public class TimePlus15Minutes_03 {
         int finalHours = totalMinutes / 60;
         int finalMinutes = totalMinutes % 60;
 
-        if (finalHours < 24){
-            System.out.printf("%d:%02d",finalHours,finalMinutes);
+        if (finalHours < 24) {
+            System.out.printf("%d:%02d", finalHours, finalMinutes);
         } else {
             finalHours = 0;
-            System.out.printf("%d:%02d",finalHours, finalMinutes);
+            System.out.printf("%d:%02d", finalHours, finalMinutes);
         }
 
     }

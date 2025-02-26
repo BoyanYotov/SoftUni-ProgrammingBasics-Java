@@ -13,6 +13,6 @@ public class ChangeBureau_02 {
         double total = ((bitCoinsQty * 1168) + ((chineseQty * 0.15) * 1.76)) / 1.95;
         double totalNet = total - (total * commission / 100);
 
-        System.out.printf("%.2f",totalNet);
+        System.out.printf("%.2f", totalNet);
     }
 }

@@ -17,49 +17,49 @@ public class Flowers_03 {
         double totalAmount = 0;
 
 
-        switch (season){
-            case "Spring","Summer":
+        switch (season) {
+            case "Spring", "Summer":
                 if (holiday.equals("N")) {
                     chrysallisPrice = 2;
                     rosesPrice = 4.10;
                     tulipsPrice = 2.50;
-                } else if (holiday.equals("Y")){
-                    chrysallisPrice = 2*1.15;
-                    rosesPrice = 4.10*1.15;
-                    tulipsPrice = 2.50*1.15;
+                } else if (holiday.equals("Y")) {
+                    chrysallisPrice = 2 * 1.15;
+                    rosesPrice = 4.10 * 1.15;
+                    tulipsPrice = 2.50 * 1.15;
                 }
-                totalAmount =   (tulipsQuantity * tulipsPrice) +
-                                (chrysallisQuantity * chrysallisPrice) +
-                                (rosesQuantity * rosesPrice);
+                totalAmount = (tulipsQuantity * tulipsPrice) +
+                        (chrysallisQuantity * chrysallisPrice) +
+                        (rosesQuantity * rosesPrice);
                 break;
-            case "Autumn","Winter":
+            case "Autumn", "Winter":
                 if (holiday.equals("N")) {
                     chrysallisPrice = 3.75;
                     rosesPrice = 4.50;
                     tulipsPrice = 4.15;
                 } else if (holiday.equals("Y")) {
-                    chrysallisPrice = 3.75*1.15;
-                    rosesPrice = 4.50*1.15;
-                    tulipsPrice = 4.15*1.15;
+                    chrysallisPrice = 3.75 * 1.15;
+                    rosesPrice = 4.50 * 1.15;
+                    tulipsPrice = 4.15 * 1.15;
                 }
-                totalAmount =   (tulipsQuantity * tulipsPrice) +
-                                (chrysallisQuantity * chrysallisPrice) +
-                                (rosesQuantity * rosesPrice);
+                totalAmount = (tulipsQuantity * tulipsPrice) +
+                        (chrysallisQuantity * chrysallisPrice) +
+                        (rosesQuantity * rosesPrice);
                 break;
         }
 
         if (season.equals("Spring") && tulipsQuantity > 7) {
             totalAmount *= 0.95;
         }
-        if (season.equals("Winter") && rosesQuantity >= 10){
+        if (season.equals("Winter") && rosesQuantity >= 10) {
             totalAmount *= 0.9;
         }
-        if (tulipsQuantity + chrysallisQuantity + rosesQuantity >= 20){
+        if (tulipsQuantity + chrysallisQuantity + rosesQuantity >= 20) {
             totalAmount *= 0.8;
         }
         totalAmount += 2;
 
-        System.out.printf("%.2f",totalAmount);
+        System.out.printf("%.2f", totalAmount);
 
     }
 }

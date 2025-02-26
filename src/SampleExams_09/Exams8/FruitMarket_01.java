@@ -13,15 +13,15 @@ public class FruitMarket_01 {
         double raspberriesQty = Double.parseDouble(scanner.nextLine());
         double strawberriesQty = Double.parseDouble(scanner.nextLine());
 
-        double raspberriesPrice = strawberriesPrice*0.5;
-        double orangesPrice = raspberriesPrice*0.6;
-        double bananaPrice = raspberriesPrice*0.2;
+        double raspberriesPrice = strawberriesPrice * 0.5;
+        double orangesPrice = raspberriesPrice * 0.6;
+        double bananaPrice = raspberriesPrice * 0.2;
 
-        double total =  (strawberriesPrice * strawberriesQty) +
-                        (bananaPrice * bananaQty) +
-                        (orangesPrice * orangesQty) +
-                        (raspberriesPrice * raspberriesQty);
+        double total = (strawberriesPrice * strawberriesQty) +
+                (bananaPrice * bananaQty) +
+                (orangesPrice * orangesQty) +
+                (raspberriesPrice * raspberriesQty);
 
-        System.out.printf("%.2f",total);
+        System.out.printf("%.2f", total);
     }
 }

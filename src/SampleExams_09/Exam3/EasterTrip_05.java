@@ -11,8 +11,8 @@ public class EasterTrip_05 {
         int nights = Integer.parseInt(scanner.nextLine());
         double pricePerNight = 0;
 
-        if (destination.equals("France")){
-            switch (dates){
+        if (destination.equals("France")) {
+            switch (dates) {
                 case "21-23":
                     pricePerNight = 30;
                     break;
@@ -23,8 +23,8 @@ public class EasterTrip_05 {
                     pricePerNight = 40;
                     break;
             }
-        } else if (destination.equals("Italy")){
-            switch (dates){
+        } else if (destination.equals("Italy")) {
+            switch (dates) {
                 case "21-23":
                     pricePerNight = 28;
                     break;
@@ -35,8 +35,8 @@ public class EasterTrip_05 {
                     pricePerNight = 39;
                     break;
             }
-        } else if (destination.equals("Germany")){
-            switch (dates){
+        } else if (destination.equals("Germany")) {
+            switch (dates) {
                 case "21-23":
                     pricePerNight = 32;
                     break;
@@ -50,6 +50,6 @@ public class EasterTrip_05 {
         }
 
         double total = pricePerNight * nights;
-        System.out.printf("Easter trip to %s : %.2f leva.",destination,total);
+        System.out.printf("Easter trip to %s : %.2f leva.", destination, total);
     }
 }

@@ -13,10 +13,10 @@ public class MountainRun_04 {
         double slowdown = Math.floor(distance / 50) * 30;
         double georgiTime = (distance * secPerMeter) + slowdown;
 
-        if (georgiTime >= recordSecs){
-            System.out.printf("No! He was %.2f seconds slower.",georgiTime - recordSecs);
+        if (georgiTime >= recordSecs) {
+            System.out.printf("No! He was %.2f seconds slower.", georgiTime - recordSecs);
         } else {
-            System.out.printf("Yes! The new record is %.2f seconds.",georgiTime);
+            System.out.printf("Yes! The new record is %.2f seconds.", georgiTime);
         }
 
     }

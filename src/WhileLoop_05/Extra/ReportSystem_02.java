@@ -42,7 +42,7 @@ public class ReportSystem_02 {
                 }
             }
 
-            if (totalSum >= goal){
+            if (totalSum >= goal) {
                 break;
             }
 
@@ -50,12 +50,12 @@ public class ReportSystem_02 {
 
         }
 
-            if (command.equals("End")) {
-                System.out.print("Failed to collect required money for charity.");
-            } else {
-                System.out.printf("Average CS: %.2f%n", sumCS * 1.0 / countCS);
-                System.out.printf("Average CC: %.2f", sumCC * 1.0 / countCC);
-            }
-
+        if (command.equals("End")) {
+            System.out.print("Failed to collect required money for charity.");
+        } else {
+            System.out.printf("Average CS: %.2f%n", sumCS * 1.0 / countCS);
+            System.out.printf("Average CC: %.2f", sumCC * 1.0 / countCC);
         }
+
     }
+}

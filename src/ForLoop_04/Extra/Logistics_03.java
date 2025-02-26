@@ -14,16 +14,16 @@ public class Logistics_03 {
         int train = 0;
         int kgs = 0;
 
-        for (int i = 1; i <= n ; i++) {
+        for (int i = 1; i <= n; i++) {
             int weight = Integer.parseInt(scanner.nextLine());
 
-            kgs+=weight;
+            kgs += weight;
 
-            if (weight <= 3){
+            if (weight <= 3) {
                 price = weight * 200;
                 total += price;
                 bus += weight;
-            } else if (weight <= 11){
+            } else if (weight <= 11) {
                 price = weight * 175;
                 total += price;
                 camion += weight;
@@ -39,10 +39,10 @@ public class Logistics_03 {
         double percentageCamion = camion * 1.0 / kgs * 100;
         double percentageTrain = train * 1.0 / kgs * 100;
 
-        System.out.printf("%.2f%n",average);
-        System.out.printf("%.2f%%%n",percentageBus);
-        System.out.printf("%.2f%%%n",percentageCamion);
-        System.out.printf("%.2f%%",percentageTrain);
+        System.out.printf("%.2f%n", average);
+        System.out.printf("%.2f%%%n", percentageBus);
+        System.out.printf("%.2f%%%n", percentageCamion);
+        System.out.printf("%.2f%%", percentageTrain);
 
     }
 }

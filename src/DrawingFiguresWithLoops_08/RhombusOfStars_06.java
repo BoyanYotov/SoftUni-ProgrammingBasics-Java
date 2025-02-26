@@ -23,7 +23,7 @@ public class RhombusOfStars_06 {
             step--;
         }
 
-        for (int k = n-1; k >= 1; k--) {
+        for (int k = n - 1; k >= 1; k--) {
             for (int l = step2; l > 0; l--) {
                 System.out.print(" ");
             }

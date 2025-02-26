@@ -8,11 +8,11 @@ public class CinemaTicketV1_08 {
 
         String day = scanner.nextLine();
 
-        if (day.equals("Monday") || day.equals("Tuesday") || day.equals("Friday")){
+        if (day.equals("Monday") || day.equals("Tuesday") || day.equals("Friday")) {
             System.out.print("12");
-        } else if (day.equals("Wednesday") || day.equals("Thursday")){
+        } else if (day.equals("Wednesday") || day.equals("Thursday")) {
             System.out.print("14");
-        } else if (day.equals("Saturday") || day.equals("Sunday")){
+        } else if (day.equals("Saturday") || day.equals("Sunday")) {
             System.out.print("16");
         }
 

@@ -9,8 +9,8 @@ public class NumberPyramid_01 {
         int n = Integer.parseInt(scanner.nextLine());
         int count = 0;
 
-        for (int rows = 1; rows <= n ; rows++) {
-            for (int cols = 1; cols <= rows ; cols++) {
+        for (int rows = 1; rows <= n; rows++) {
+            for (int cols = 1; cols <= rows; cols++) {
                 count++;
 
                 System.out.printf("%d ", count);
@@ -23,7 +23,7 @@ public class NumberPyramid_01 {
 
             System.out.println();
 
-            }
+        }
     }
 }
 

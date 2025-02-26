@@ -9,18 +9,18 @@ public class CareOfPuppy_09 {
         int boughtFood = Integer.parseInt(scanner.nextLine());
         double boughtFoodGrams = boughtFood * 1000;
         String command = scanner.nextLine();
-        double eatenFood =0;
+        double eatenFood = 0;
 
-        while (!command.equals("Adopted")){
+        while (!command.equals("Adopted")) {
             int eat = Integer.parseInt(command);
             eatenFood += eat;
             command = scanner.nextLine();
         }
 
-        if (eatenFood > boughtFoodGrams){
-            System.out.printf("Food is not enough. You need %.0f grams more.",eatenFood - boughtFoodGrams);
+        if (eatenFood > boughtFoodGrams) {
+            System.out.printf("Food is not enough. You need %.0f grams more.", eatenFood - boughtFoodGrams);
         } else {
-            System.out.printf("Food is enough! Leftovers: %.0f grams.",boughtFoodGrams - eatenFood);
+            System.out.printf("Food is enough! Leftovers: %.0f grams.", boughtFoodGrams - eatenFood);
         }
     }
 }

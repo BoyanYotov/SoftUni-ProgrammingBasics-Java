@@ -1,7 +1,7 @@
 package FirstStepsInCoding_01.Lab;
 
 public class Numbers1To10_02 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println("1");
         System.out.println(2);
         System.out.println(3);

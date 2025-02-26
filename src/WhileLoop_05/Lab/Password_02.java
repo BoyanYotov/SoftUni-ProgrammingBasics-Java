@@ -11,10 +11,10 @@ public class Password_02 {
 
         String input = scanner.nextLine();
 
-        while (!input.equals(password)){
+        while (!input.equals(password)) {
             input = scanner.nextLine();
         }
 
-        System.out.printf("Welcome %s!",username);
+        System.out.printf("Welcome %s!", username);
     }
 }

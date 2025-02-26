@@ -8,13 +8,15 @@ public class WeekendOrWeekday_02 {
 
         String day = scanner.nextLine();
 
-        switch (day){
-            case "Monday","Tuesday","Wednesday","Thursday","Friday":
+        switch (day) {
+            case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday":
                 System.out.print("Working day");
-            break;
-            case "Sunday","Saturday":
-                System.out.print("Weekend"); break;
-            default:System.out.print("Error");
+                break;
+            case "Sunday", "Saturday":
+                System.out.print("Weekend");
+                break;
+            default:
+                System.out.print("Error");
         }
 
     }

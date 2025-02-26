@@ -28,7 +28,7 @@ public class Vacation_03 {
                     currentAccount = 0;
                 }
 
-                if (daysSpent == 5){
+                if (daysSpent == 5) {
                     System.out.println("You can't save the money.");
                     System.out.printf("%d", daysCount);
                     break;

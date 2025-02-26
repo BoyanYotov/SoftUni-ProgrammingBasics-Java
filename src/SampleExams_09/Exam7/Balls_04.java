@@ -37,7 +37,7 @@ public class Balls_04 {
                     whiteBalls++;
                     break;
                 case "black":
-                    totalPoints = Math.floor(totalPoints/=2.0);
+                    totalPoints = Math.floor(totalPoints /= 2.0);
                     blackBalls++;
                     points = 0;
                     break;
@@ -47,12 +47,12 @@ public class Balls_04 {
             }
             totalPoints += points;
         }
-            System.out.printf("Total points: %.0f%n", totalPoints);
-            System.out.printf("Red balls: %d%n", redBalls);
-            System.out.printf("Orange balls: %d%n", orangeBalls);
-            System.out.printf("Yellow balls: %d%n", yellowBalls);
-            System.out.printf("White balls: %d%n", whiteBalls);
-            System.out.printf("Other colors picked: %d%n", othercolours);
-            System.out.printf("Divides from black balls: %d", blackBalls);
-        }
+        System.out.printf("Total points: %.0f%n", totalPoints);
+        System.out.printf("Red balls: %d%n", redBalls);
+        System.out.printf("Orange balls: %d%n", orangeBalls);
+        System.out.printf("Yellow balls: %d%n", yellowBalls);
+        System.out.printf("White balls: %d%n", whiteBalls);
+        System.out.printf("Other colors picked: %d%n", othercolours);
+        System.out.printf("Divides from black balls: %d", blackBalls);
     }
+}

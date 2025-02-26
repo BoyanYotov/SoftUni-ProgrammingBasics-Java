@@ -13,14 +13,14 @@ public class CinemaVoucher_04 {
         int countTickets = 0;
         int countOthers = 0;
 
-        while (!command.equals("End")){
-            if (command.length() > 8){
+        while (!command.equals("End")) {
+            if (command.length() > 8) {
                 priceTicket = command.charAt(0) + command.charAt(1);
-                    if (priceTicket > currentAccount){
-                        break;
-                    } else {
+                if (priceTicket > currentAccount) {
+                    break;
+                } else {
                     countTickets++;
-                    }
+                }
             } else {
                 priceTicket = command.charAt(0);
                 if (priceTicket > currentAccount) {

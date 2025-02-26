@@ -12,15 +12,15 @@ public class ChallengeTheWedding_05 {
         int count = 0;
 
 
-        for (int i = 1; i <= tables ; i++) {
+        for (int i = 1; i <= tables; i++) {
 
-            for (int j = 1; j <=men ; j++) {
-                for (int k = 1; k <=women ; k++) {
+            for (int j = 1; j <= men; j++) {
+                for (int k = 1; k <= women; k++) {
 
-                    System.out.printf("(%d <-> %d) ",j,k);
+                    System.out.printf("(%d <-> %d) ", j, k);
                     count++;
 
-                    if (count == tables){
+                    if (count == tables) {
                         return;
                     }
 

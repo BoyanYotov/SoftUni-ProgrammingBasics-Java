@@ -10,21 +10,21 @@ public class AccountBalance_05 {
         String text = scanner.nextLine();
         double totalSum = 0;
 
-        while (!text.equals("NoMoreMoney")){
+        while (!text.equals("NoMoreMoney")) {
 
             double money = Double.parseDouble(text);
-            if (money < 0){
+            if (money < 0) {
                 System.out.println("Invalid operation!");
                 break;
             }
 
             totalSum += money;
 
-            System.out.printf("Increase: %.2f%n",money);
+            System.out.printf("Increase: %.2f%n", money);
             text = scanner.nextLine();
         }
 
-        System.out.printf("Total: %.2f",totalSum);
+        System.out.printf("Total: %.2f", totalSum);
 
     }
 }

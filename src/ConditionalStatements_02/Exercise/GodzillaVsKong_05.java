@@ -11,19 +11,19 @@ public class GodzillaVsKong_05 {
         int people = Integer.parseInt(scanner.nextLine());
         double costumePrice = Double.parseDouble(scanner.nextLine());
 
-        double decorPrice = budget*0.1;
-        double clothesTotalPrice = people* costumePrice;
+        double decorPrice = budget * 0.1;
+        double clothesTotalPrice = people * costumePrice;
 
-        if (people > 150){
+        if (people > 150) {
             clothesTotalPrice *= 0.9;
         }
 
         double leftover = Math.abs(budget - decorPrice - clothesTotalPrice);
 
         if ((decorPrice + clothesTotalPrice) > budget) {
-            System.out.printf("Not enough money!%nWingard needs %.2f leva more.",leftover);
+            System.out.printf("Not enough money!%nWingard needs %.2f leva more.", leftover);
         } else {
-            System.out.printf("Action!%nWingard starts filming with %.2f leva left.",leftover);
+            System.out.printf("Action!%nWingard starts filming with %.2f leva left.", leftover);
         }
 
     }

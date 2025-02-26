@@ -14,27 +14,27 @@ public class TrekkingMania_08 {
         int K2 = 0;
         int Everest = 0;
 
-        for (int i = 1; i <= groups ; i++) {
+        for (int i = 1; i <= groups; i++) {
             int people = Integer.parseInt(scanner.nextLine());
             totalPeople += people;
 
-            if (people <= 5){
-            Musallah += people;
-            } else if (people <= 12){
+            if (people <= 5) {
+                Musallah += people;
+            } else if (people <= 12) {
                 MonBlanc += people;
-            } else if (people <= 25){
+            } else if (people <= 25) {
                 Kilimandjaro += people;
-            } else if (people <= 40){
+            } else if (people <= 40) {
                 K2 += people;
             } else {
                 Everest += people;
             }
         }
 
-        System.out.printf("%.2f%%%n",Musallah * 1.0 / totalPeople * 100);
-        System.out.printf("%.2f%%%n",MonBlanc * 1.0 / totalPeople * 100);
-        System.out.printf("%.2f%%%n",Kilimandjaro * 1.0 / totalPeople * 100);
-        System.out.printf("%.2f%%%n",K2 * 1.0 / totalPeople * 100);
-        System.out.printf("%.2f%%",Everest * 1.0 / totalPeople * 100);
+        System.out.printf("%.2f%%%n", Musallah * 1.0 / totalPeople * 100);
+        System.out.printf("%.2f%%%n", MonBlanc * 1.0 / totalPeople * 100);
+        System.out.printf("%.2f%%%n", Kilimandjaro * 1.0 / totalPeople * 100);
+        System.out.printf("%.2f%%%n", K2 * 1.0 / totalPeople * 100);
+        System.out.printf("%.2f%%", Everest * 1.0 / totalPeople * 100);
     }
 }

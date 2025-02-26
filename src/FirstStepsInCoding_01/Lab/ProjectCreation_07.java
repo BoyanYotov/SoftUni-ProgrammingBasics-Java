@@ -11,7 +11,8 @@ public class ProjectCreation_07 {
         int projects = Integer.parseInt(scanner.nextLine());
         int result = projects * 3;
 
-        System.out.println("The architect " + name + " will need " + result + " hours to complete " + projects + " project/s.");
+        System.out.println("The architect " + name + " will need " + result + " hours to complete "
+                + projects + " project/s.");
 
     }
 }

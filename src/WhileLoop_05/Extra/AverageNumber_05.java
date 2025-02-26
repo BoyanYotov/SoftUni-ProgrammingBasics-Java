@@ -11,13 +11,13 @@ public class AverageNumber_05 {
         int count = 0;
         int total = 0;
 
-        for (int i = 1; i <= number ; i++) {
+        for (int i = 1; i <= number; i++) {
             int input = Integer.parseInt(scanner.nextLine());
             count++;
-            total+=input;
+            total += input;
         }
 
-        System.out.printf("%.2f",total * 1.0 / count);
+        System.out.printf("%.2f", total * 1.0 / count);
 
     }
 }

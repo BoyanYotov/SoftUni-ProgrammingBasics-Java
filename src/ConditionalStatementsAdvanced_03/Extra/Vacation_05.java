@@ -14,25 +14,25 @@ public class Vacation_05 {
 
         if (budget <= 1000) {
             host = "Camp";
-            if (season.equals("Summer")){
+            if (season.equals("Summer")) {
                 destination = "Alaska";
                 price = budget * 0.65;
             } else if (season.equals("Winter")) {
                 destination = "Morocco";
                 price = budget * 0.45;
             }
-        } else if (budget > 1000 & budget <= 3000){
+        } else if (budget > 1000 & budget <= 3000) {
             host = "Hut";
-            if (season.equals("Summer")){
+            if (season.equals("Summer")) {
                 destination = "Alaska";
                 price = budget * 0.8;
             } else if (season.equals("Winter")) {
                 destination = "Morocco";
                 price = budget * 0.6;
             }
-        } else if (budget > 3000){
+        } else if (budget > 3000) {
             host = "Hotel";
-            if (season.equals("Summer")){
+            if (season.equals("Summer")) {
                 destination = "Alaska";
                 price = budget * 0.9;
             } else if (season.equals("Winter")) {
@@ -41,7 +41,7 @@ public class Vacation_05 {
             }
         }
 
-        System.out.printf("%s - %s - %.2f",destination,host,price);
+        System.out.printf("%s - %s - %.2f", destination, host, price);
 
     }
 }

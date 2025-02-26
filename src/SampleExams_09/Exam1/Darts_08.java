@@ -14,7 +14,7 @@ public class Darts_08 {
         while (true) {
             String zone = scanner.nextLine();
             if (zone.equals("Retire")) {
-                System.out.printf("%s retired after %d unsuccessful shots.",name, loseCount);
+                System.out.printf("%s retired after %d unsuccessful shots.", name, loseCount);
                 return;
             }
 
@@ -23,21 +23,21 @@ public class Darts_08 {
             if (zone.equals("Single")) {
                 points = points;
             } else if (zone.equals("Double")) {
-                points=2 * points;
+                points = 2 * points;
             } else if (zone.equals("Triple")) {
                 points = 3 * points;
             }
 
             if ((currentPoints - points) > 0) {
-                    winsCount++;
-                    currentPoints -= points;
-                } else if ((currentPoints - points) == 0){
-                    winsCount++;
-                    break;
-                } else {
-                    loseCount++;
-                }
+                winsCount++;
+                currentPoints -= points;
+            } else if ((currentPoints - points) == 0) {
+                winsCount++;
+                break;
+            } else {
+                loseCount++;
             }
+        }
         System.out.printf("%s won the leg with %d shots.", name, winsCount);
     }
 }

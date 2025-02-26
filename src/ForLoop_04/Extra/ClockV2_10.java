@@ -7,7 +7,7 @@ public class ClockV2_10 {
             for (int minutes = 0; minutes < 60; minutes++) {
                 for (int seconds = 0; seconds < 60; seconds++) {
 
-                    System.out.printf("%d : %d : %d%n",hours,minutes,seconds);
+                    System.out.printf("%d : %d : %d%n", hours, minutes, seconds);
 
                 }
             }

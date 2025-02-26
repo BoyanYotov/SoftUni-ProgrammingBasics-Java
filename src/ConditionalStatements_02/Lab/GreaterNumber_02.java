@@ -10,7 +10,7 @@ public class GreaterNumber_02 {
         int number1 = Integer.parseInt(scanner.nextLine());
         int number2 = Integer.parseInt(scanner.nextLine());
 
-        if (number1 > number2){
+        if (number1 > number2) {
             System.out.println(number1);
         } else {
             System.out.println(number2);

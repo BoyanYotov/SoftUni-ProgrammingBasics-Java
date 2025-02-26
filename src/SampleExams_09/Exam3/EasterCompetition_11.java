@@ -17,29 +17,29 @@ public class EasterCompetition_11 {
             totalPointsCake = 0;
             String name = scanner.nextLine();
 
-            while (true){
+            while (true) {
                 String command = scanner.nextLine();
-                if (command.equals("Stop")){
+                if (command.equals("Stop")) {
                     break;
                 } else {
                     points = Integer.parseInt(command);
                 }
-                totalPointsCake+=points;
+                totalPointsCake += points;
             }
 
-            if (totalPointsCake > bestPoints){
+            if (totalPointsCake > bestPoints) {
                 bestPoints = totalPointsCake;
                 bestCake = name;
             }
 
-            System.out.printf("%s has %d points.%n",name,totalPointsCake);
+            System.out.printf("%s has %d points.%n", name, totalPointsCake);
 
-            if (totalPointsCake > bestSoFar){
+            if (totalPointsCake > bestSoFar) {
                 bestSoFar = totalPointsCake;
-                System.out.printf("%s is the new number 1!%n",name);
+                System.out.printf("%s is the new number 1!%n", name);
             }
         }
 
-        System.out.printf("%s won competition with %d points!",bestCake,bestPoints);
+        System.out.printf("%s won competition with %d points!", bestCake, bestPoints);
     }
 }

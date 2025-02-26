@@ -14,18 +14,18 @@ public class GodzillavsKong_02 {
         double totalClothes = peopleQuantity * pricePerPerson;
 
 
-        if (peopleQuantity > 150){
+        if (peopleQuantity > 150) {
             totalClothes *= 0.9;
         }
 
         double totalExpenses = totalClothes + decorPrice;
 
-        if (totalExpenses > budget){
+        if (totalExpenses > budget) {
             System.out.println("Not enough money!");
             System.out.printf("Wingard needs %.2f leva more.", totalExpenses - budget);
         } else {
             System.out.println("Action!");
-            System.out.printf("Wingard starts filming with %.2f leva left.",budget - totalExpenses);
+            System.out.printf("Wingard starts filming with %.2f leva left.", budget - totalExpenses);
         }
 
     }

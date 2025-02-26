@@ -13,7 +13,7 @@ public class Building_06 {
         for (int i = floors; i > 0; i--) {
             for (int j = 0; j < rooms; j++) {
 
-                if (i == floors){
+                if (i == floors) {
                     System.out.printf("L%d%d ", i, j);
                 } else if (i % 2 == 0) {
                     System.out.printf("O%d%d ", i, j);

@@ -9,11 +9,11 @@ public class Series_08 {
         double budget = Double.parseDouble(scanner.nextLine());
         int n = Integer.parseInt(scanner.nextLine());
 
-        for (int i = 1; i <= n ; i++) {
+        for (int i = 1; i <= n; i++) {
             String name = scanner.nextLine();
             double price = Double.parseDouble(scanner.nextLine());
 
-            switch (name){
+            switch (name) {
                 case "Thrones":
                     price = price * 0.5;
                     break;
@@ -35,10 +35,10 @@ public class Series_08 {
 
         }
 
-        if (budget >= 0){
-            System.out.printf("You bought all the series and left with %.2f lv.",Math.abs(budget));
+        if (budget >= 0) {
+            System.out.printf("You bought all the series and left with %.2f lv.", Math.abs(budget));
         } else {
-            System.out.printf("You need %.2f lv. more to buy the series!",Math.abs(budget));
+            System.out.printf("You need %.2f lv. more to buy the series!", Math.abs(budget));
         }
     }
 }

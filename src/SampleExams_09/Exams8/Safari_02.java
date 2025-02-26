@@ -14,16 +14,16 @@ public class Safari_02 {
         int guide = 100;
         double grandTotal = 0;
 
-        if (day.equals("Saturday")){
+        if (day.equals("Saturday")) {
             grandTotal = (litersTotal + guide) * 0.9;
         } else if (day.equals("Sunday")) {
             grandTotal = (litersTotal + guide) * 0.8;
         }
 
-        if (budget >= grandTotal){
-            System.out.printf("Safari time! Money left: %.2f lv. ",budget - grandTotal);
+        if (budget >= grandTotal) {
+            System.out.printf("Safari time! Money left: %.2f lv. ", budget - grandTotal);
         } else {
-            System.out.printf("Not enough money! Money needed: %.2f lv.",Math.abs(grandTotal-budget));
+            System.out.printf("Not enough money! Money needed: %.2f lv.", Math.abs(grandTotal - budget));
         }
     }
 }

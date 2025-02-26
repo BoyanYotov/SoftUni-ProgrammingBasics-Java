@@ -16,9 +16,9 @@ public class EasterBakery_02 {
         double priceEggs = flowerPrice * 1.1;
         double mayaPrice = sugarPrice * 0.2;
 
-        double total =  (flowerKg * flowerPrice) + (sugarPrice * sugarKg) +
-                        (eggs * priceEggs) + (mayaPrice * yeast);
+        double total = (flowerKg * flowerPrice) + (sugarPrice * sugarKg) +
+                (eggs * priceEggs) + (mayaPrice * yeast);
 
-        System.out.printf("%.2f",total);
+        System.out.printf("%.2f", total);
     }
 }

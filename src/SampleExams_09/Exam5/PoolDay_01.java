@@ -15,6 +15,6 @@ public class PoolDay_01 {
         double chaiseTotal = (Math.ceil(people * 0.75) * chairPrice);
         double total = umbrellaTotal + chaiseTotal + (people * entranceFee);
 
-        System.out.printf("%.2f lv.",total);
+        System.out.printf("%.2f lv.", total);
     }
 }

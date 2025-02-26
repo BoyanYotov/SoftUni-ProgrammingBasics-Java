@@ -8,14 +8,15 @@ public class AnimalType_03 {
 
         String animal = scanner.nextLine();
 
-        switch(animal){
+        switch (animal) {
             case "dog":
                 System.out.print("mammal");
                 break;
-            case "snake","tortoise","crocodile":
+            case "snake", "tortoise", "crocodile":
                 System.out.print("reptile");
                 break;
-            default: System.out.print("unknown");
+            default:
+                System.out.print("unknown");
                 break;
         }
 

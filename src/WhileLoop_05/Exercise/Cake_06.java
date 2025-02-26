@@ -11,9 +11,9 @@ public class Cake_06 {
         int b = Integer.parseInt(scanner.nextLine());
         int pieces = a * b;
 
-        while (pieces > 0){
+        while (pieces > 0) {
             String command = scanner.nextLine();
-            if (command.equals("STOP")){
+            if (command.equals("STOP")) {
                 break;
             }
 
@@ -21,8 +21,8 @@ public class Cake_06 {
             pieces -= takes;
         }
 
-        if (pieces > 0){
-            System.out.printf("%d pieces are left.",pieces);
+        if (pieces > 0) {
+            System.out.printf("%d pieces are left.", pieces);
         } else {
             System.out.printf("No more cake left! You need %d pieces more.", Math.abs(pieces));
         }

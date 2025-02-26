@@ -14,6 +14,6 @@ public class BasketballEquipment_02 {
         double access = ball / 5;
 
         double total = yearTax + shoes + clothes + ball + access;
-        System.out.printf("%.2f",total);
+        System.out.printf("%.2f", total);
     }
 }

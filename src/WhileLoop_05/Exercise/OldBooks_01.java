@@ -16,9 +16,7 @@ public class OldBooks_01 {
             if (currentBook.equals("No More Books")) {
                 break;
             }
-
             count++;
-
             currentBook = scanner.nextLine();
         }
 

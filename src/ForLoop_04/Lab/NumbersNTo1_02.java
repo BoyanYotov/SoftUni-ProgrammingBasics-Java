@@ -8,7 +8,7 @@ public class NumbersNTo1_02 {
 
         int n = Integer.parseInt(scanner.nextLine());
 
-        for (int i = n; i >= 1 ; i--) {
+        for (int i = n; i >= 1; i--) {
             System.out.println(i);
         }
 

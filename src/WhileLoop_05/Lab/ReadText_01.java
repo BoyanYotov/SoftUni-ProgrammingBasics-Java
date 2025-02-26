@@ -9,7 +9,7 @@ public class ReadText_01 {
 
         String text = scanner.nextLine();
 
-        while (!text.equals("Stop")){
+        while (!text.equals("Stop")) {
 
             System.out.println(text);
 

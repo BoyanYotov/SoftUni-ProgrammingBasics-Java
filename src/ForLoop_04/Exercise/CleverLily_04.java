@@ -13,13 +13,13 @@ public class CleverLily_04 {
         int present = 0;
         int totalMoney = 0;
 
-        for (int i = 1; i <= age ; i++) {
+        for (int i = 1; i <= age; i++) {
 
-            if (i % 2 == 0){
-            present += 10;
-            totalMoney += present - 1;
+            if (i % 2 == 0) {
+                present += 10;
+                totalMoney += present - 1;
             } else {
-            countToys++;
+                countToys++;
             }
         }
 
@@ -27,10 +27,10 @@ public class CleverLily_04 {
 
         if (sumTotal >= priceWashingMachine) {
             System.out.print("Yes! ");
-            System.out.printf("%.2f",sumTotal-priceWashingMachine);
+            System.out.printf("%.2f", sumTotal - priceWashingMachine);
         } else {
             System.out.print("No! ");
-            System.out.printf("%.2f",Math.abs(priceWashingMachine-sumTotal));
+            System.out.printf("%.2f", Math.abs(priceWashingMachine - sumTotal));
         }
 
     }

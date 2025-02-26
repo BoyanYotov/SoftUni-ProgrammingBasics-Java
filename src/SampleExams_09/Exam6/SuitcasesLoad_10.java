@@ -11,11 +11,11 @@ public class SuitcasesLoad_10 {
         double totalSpace = 0;
         int bags = 0;
 
-        while(!command.equals("End")){
+        while (!command.equals("End")) {
             double space = Double.parseDouble(command);
             totalSpace += space;
 
-            if (totalSpace >= capacity){
+            if (totalSpace >= capacity) {
                 System.out.println("No more space!");
                 break;
             } else {
@@ -25,10 +25,10 @@ public class SuitcasesLoad_10 {
             command = scanner.nextLine();
         }
 
-        if (totalSpace < capacity){
+        if (totalSpace < capacity) {
             System.out.println("Congratulations! All suitcases are loaded!");
         }
 
-        System.out.printf("Statistic: %d suitcases loaded.",bags);
+        System.out.printf("Statistic: %d suitcases loaded.", bags);
     }
 }

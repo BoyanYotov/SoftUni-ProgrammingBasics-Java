@@ -10,14 +10,14 @@ public class SumNumbers_03 {
         int number = Integer.parseInt(scanner.nextLine());
         int sum = 0;
 
-        while (sum < number){
+        while (sum < number) {
 
             int newNumber = Integer.parseInt(scanner.nextLine());
             sum += newNumber;
 
-            }
+        }
 
-        System.out.printf("%d",sum);
+        System.out.printf("%d", sum);
 
     }
 }

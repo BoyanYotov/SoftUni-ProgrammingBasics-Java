@@ -23,7 +23,7 @@ public class TournamentOfChristmas_11 {
 
             while (true) {
                 String sport = scanner.nextLine();
-                if (sport.equals("Finish")){
+                if (sport.equals("Finish")) {
                     break;
                 }
                 String result = scanner.nextLine();
@@ -38,20 +38,20 @@ public class TournamentOfChristmas_11 {
 
                 totalWin += price;
             }
-                if (winsCount > loseCount){
-                    totalWin *= 1.1;
-                }
+            if (winsCount > loseCount) {
+                totalWin *= 1.1;
+            }
 
-                grandWins += winsCount;
-                grandLose += loseCount;
-                grandTotal += totalWin;
+            grandWins += winsCount;
+            grandLose += loseCount;
+            grandTotal += totalWin;
         }
 
-        if (grandWins > grandLose){
+        if (grandWins > grandLose) {
             grandTotal *= 1.2;
-            System.out.printf("You won the tournament! Total raised money: %.2f",grandTotal);
+            System.out.printf("You won the tournament! Total raised money: %.2f", grandTotal);
         } else {
-            System.out.printf("You lost the tournament! Total raised money: %.2f",grandTotal);
+            System.out.printf("You lost the tournament! Total raised money: %.2f", grandTotal);
         }
     }
 }

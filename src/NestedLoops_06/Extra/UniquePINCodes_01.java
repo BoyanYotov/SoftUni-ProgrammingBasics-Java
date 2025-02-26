@@ -10,22 +10,22 @@ public class UniquePINCodes_01 {
         int b = Integer.parseInt(scanner.nextLine());
         int c = Integer.parseInt(scanner.nextLine());
 
-        for (int i = 1; i <= a ; i++) {
-            if (i % 2 != 0){
+        for (int i = 1; i <= a; i++) {
+            if (i % 2 != 0) {
                 continue;
             }
 
-            for (int j = 2; j <= b ; j++) {
-                if (j == 4 || j == 6 || j == 8 || j == 9){
+            for (int j = 2; j <= b; j++) {
+                if (j == 4 || j == 6 || j == 8 || j == 9) {
                     continue;
                 }
 
-                for (int k = 1; k <= c ; k++) {
-                    if (k % 2 != 0){
+                for (int k = 1; k <= c; k++) {
+                    if (k % 2 != 0) {
                         continue;
                     }
 
-                    System.out.printf("%d %d %d%n",i,j,k);
+                    System.out.printf("%d %d %d%n", i, j, k);
 
                 }
             }

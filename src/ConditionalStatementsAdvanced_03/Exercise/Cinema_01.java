@@ -11,15 +11,15 @@ public class Cinema_01 {
         int columns = Integer.parseInt(scanner.nextLine());
         double total = 0;
 
-        if (type.equals("Premiere")){
+        if (type.equals("Premiere")) {
             total = rows * columns * 12;
-        } else if (type.equals("Normal")){
+        } else if (type.equals("Normal")) {
             total = rows * columns * 7.5;
-        } else if (type.equals("Discount")){
+        } else if (type.equals("Discount")) {
             total = rows * columns * 5;
         }
 
-        System.out.printf("%.2f",total);
+        System.out.printf("%.2f", total);
 
     }
 }

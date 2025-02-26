@@ -28,7 +28,7 @@ public class MovieRatings_05 {
             if (i == 1) {
                 minRating = rating;
                 worstMovie = movie;
-            } else if (i>1 && rating<minRating){
+            } else if (i > 1 && rating < minRating) {
                 minRating = rating;
                 worstMovie = movie;
             }

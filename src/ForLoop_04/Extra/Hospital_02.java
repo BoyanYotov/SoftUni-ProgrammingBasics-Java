@@ -11,7 +11,7 @@ public class Hospital_02 {
         int untreatedPatients = 0;
         int doctors = 7;
 
-        for (int i = 1; i <= days ; i++) {
+        for (int i = 1; i <= days; i++) {
 
             int patients = Integer.parseInt(scanner.nextLine());
 
@@ -28,7 +28,7 @@ public class Hospital_02 {
         }
 
         System.out.printf("Treated patients: %d.%n", treatedPatients);
-        System.out.printf("Untreated patients: %d.",untreatedPatients);
+        System.out.printf("Untreated patients: %d.", untreatedPatients);
 
     }
 }

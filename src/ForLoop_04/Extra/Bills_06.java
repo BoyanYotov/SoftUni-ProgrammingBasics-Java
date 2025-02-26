@@ -13,7 +13,7 @@ public class Bills_06 {
         double others = 0;
         double othersTotal = 0;
 
-        for (int i = 1; i <= months ; i++) {
+        for (int i = 1; i <= months; i++) {
             double electricity = Double.parseDouble(scanner.nextLine());
 
             electricityTotal += electricity;
@@ -26,11 +26,11 @@ public class Bills_06 {
 
         double average = (othersTotal + electricityTotal + waterTotal + internetTotal) / months;
 
-        System.out.printf("Electricity: %.2f lv%n",electricityTotal);
-        System.out.printf("Water: %.2f lv%n",waterTotal);
-        System.out.printf("Internet: %.2f lv%n",internetTotal);
-        System.out.printf("Other: %.2f lv%n",othersTotal);
-        System.out.printf("Average: %.2f lv",average);
+        System.out.printf("Electricity: %.2f lv%n", electricityTotal);
+        System.out.printf("Water: %.2f lv%n", waterTotal);
+        System.out.printf("Internet: %.2f lv%n", internetTotal);
+        System.out.printf("Other: %.2f lv%n", othersTotal);
+        System.out.printf("Average: %.2f lv", average);
 
     }
 }

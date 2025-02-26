@@ -3,7 +3,7 @@ package FirstStepsInCoding_01.Exercise;
 import java.util.Scanner;
 
 public class Repainting_06 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -19,6 +19,6 @@ public class Repainting_06 {
         double materialsTotal = (nylonSum + paintSum + solverSum + 0.4);
         double hoursTotal = materialsTotal * 0.3;
 
-        System.out.println(materialsTotal + hoursTotal*hours);
+        System.out.println(materialsTotal + hoursTotal * hours);
     }
 }

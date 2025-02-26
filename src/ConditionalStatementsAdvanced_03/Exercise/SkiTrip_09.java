@@ -35,12 +35,13 @@ public class SkiTrip_09 {
                 break;
         }
 
-        if (review.equals("positive")){
-                    total = total * 1.25;
-                } else if (review.equals("negative")){
-                    total = total * 0.9;}
-
-        System.out.printf("%.2f",total);
-
+        if (review.equals("positive")) {
+            total = total * 1.25;
+        } else if (review.equals("negative")) {
+            total = total * 0.9;
         }
+
+        System.out.printf("%.2f", total);
+
     }
+}

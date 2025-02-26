@@ -59,10 +59,10 @@ public class TravelAgency_04 {
 
         double total = days * dayPrice;
 
-        if (days >= 7){
+        if (days >= 7) {
             total = (days - 1) * dayPrice;
         }
 
-        System.out.printf("The price is %.2flv! Have a nice time!",total);
+        System.out.printf("The price is %.2flv! Have a nice time!", total);
     }
 }

@@ -18,32 +18,32 @@ public class TrekkingMania_07 {
 
             int groupMembersQuantity = Integer.parseInt(scanner.nextLine());
 
-            if (groupMembersQuantity <= 5){
-            musala += groupMembersQuantity;
-            }else if (groupMembersQuantity <= 12){
-            montBlanc += groupMembersQuantity;
-            } else if (groupMembersQuantity <= 25){
-            kilimandjaro += groupMembersQuantity;
-            } else if (groupMembersQuantity <= 40){
-            k2 += groupMembersQuantity;
+            if (groupMembersQuantity <= 5) {
+                musala += groupMembersQuantity;
+            } else if (groupMembersQuantity <= 12) {
+                montBlanc += groupMembersQuantity;
+            } else if (groupMembersQuantity <= 25) {
+                kilimandjaro += groupMembersQuantity;
+            } else if (groupMembersQuantity <= 40) {
+                k2 += groupMembersQuantity;
             } else {
-            everest += groupMembersQuantity;
+                everest += groupMembersQuantity;
             }
 
             totalPeople += groupMembersQuantity;
         }
 
-            double percentMusala = musala * 1.0 / totalPeople * 100;
-            double percentMontblanc = montBlanc * 1.0 / totalPeople * 100;
-            double percentKilimandjaro = kilimandjaro * 1.0 / totalPeople * 100;
-            double percentK2 = k2 * 1.0 / totalPeople * 100;
-            double percentEverest = everest * 1.0 / totalPeople * 100;
+        double percentMusala = musala * 1.0 / totalPeople * 100;
+        double percentMontblanc = montBlanc * 1.0 / totalPeople * 100;
+        double percentKilimandjaro = kilimandjaro * 1.0 / totalPeople * 100;
+        double percentK2 = k2 * 1.0 / totalPeople * 100;
+        double percentEverest = everest * 1.0 / totalPeople * 100;
 
-        System.out.printf("%.2f%%%n",percentMusala);
-        System.out.printf("%.2f%%%n",percentMontblanc);
-        System.out.printf("%.2f%%%n",percentKilimandjaro);
-        System.out.printf("%.2f%%%n",percentK2);
-        System.out.printf("%.2f%%%n",percentEverest);
+        System.out.printf("%.2f%%%n", percentMusala);
+        System.out.printf("%.2f%%%n", percentMontblanc);
+        System.out.printf("%.2f%%%n", percentKilimandjaro);
+        System.out.printf("%.2f%%%n", percentK2);
+        System.out.printf("%.2f%%%n", percentEverest);
 
     }
 }

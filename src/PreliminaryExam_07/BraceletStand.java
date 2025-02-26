@@ -14,10 +14,10 @@ public class BraceletStand {
 
         double total = (pocketMoney * 5) + (5 * profitPerDay) - expenses;
 
-        if (total > presentPrice){
-            System.out.printf("Profit: %.2f BGN, the gift has been purchased.",total);
+        if (total > presentPrice) {
+            System.out.printf("Profit: %.2f BGN, the gift has been purchased.", total);
         } else {
-            System.out.printf("Insufficient money: %.2f BGN.",presentPrice-total);
+            System.out.printf("Insufficient money: %.2f BGN.", presentPrice - total);
         }
     }
 }

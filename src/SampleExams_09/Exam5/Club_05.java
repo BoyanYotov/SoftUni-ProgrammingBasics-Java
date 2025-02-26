@@ -9,31 +9,31 @@ public class Club_05 {
         double goal = Double.parseDouble(scanner.nextLine());
         double gained = 0;
 
-        while (true){
+        while (true) {
             String command = scanner.nextLine();
 
-            if (command.equals("Party!")){
-                if (gained >= goal){
+            if (command.equals("Party!")) {
+                if (gained >= goal) {
                     System.out.print("Target acquired.");
                     break;
                 } else {
-                    System.out.printf("We need %.2f leva more.%n",goal-gained);
+                    System.out.printf("We need %.2f leva more.%n", goal - gained);
                     break;
                 }
             }
 
             int qty = Integer.parseInt(scanner.nextLine());
-            double price = command.length()*qty;
-            if (price % 2 != 0){
+            double price = command.length() * qty;
+            if (price % 2 != 0) {
                 price *= 0.75;
             }
             gained += price;
-            if (gained >= goal){
+            if (gained >= goal) {
                 System.out.printf("Target acquired.%n");
                 break;
             }
         }
 
-        System.out.printf("Club income - %.2f leva.",gained);
+        System.out.printf("Club income - %.2f leva.", gained);
     }
 }

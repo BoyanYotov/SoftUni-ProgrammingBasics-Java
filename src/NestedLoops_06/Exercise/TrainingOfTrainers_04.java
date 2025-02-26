@@ -12,23 +12,23 @@ public class TrainingOfTrainers_04 {
         double grandTotal = 0;
         int gradeCount = 0;
 
-        while (!command.equals("Finish")){
+        while (!command.equals("Finish")) {
 
             for (int i = 1; i <= examiners; i++) {
                 double grade = Double.parseDouble(scanner.nextLine());
                 totalLesson += grade;
-                grandTotal+=grade;
+                grandTotal += grade;
                 gradeCount++;
             }
 
-        double averageLesson = totalLesson / examiners;
-        System.out.printf("%s - %.2f.%n", command, averageLesson);
+            double averageLesson = totalLesson / examiners;
+            System.out.printf("%s - %.2f.%n", command, averageLesson);
 
-        totalLesson = 0;
-        command = scanner.nextLine();
-    }
+            totalLesson = 0;
+            command = scanner.nextLine();
+        }
 
-        System.out.printf("Student's final assessment is %.2f.",grandTotal/gradeCount);
+        System.out.printf("Student's final assessment is %.2f.", grandTotal / gradeCount);
 
     }
 }

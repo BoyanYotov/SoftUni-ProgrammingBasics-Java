@@ -13,6 +13,6 @@ public class OscarsCeremony_01 {
 
         double total = rent + figurines + food + sound;
 
-        System.out.printf("%.2f",total);
+        System.out.printf("%.2f", total);
     }
 }

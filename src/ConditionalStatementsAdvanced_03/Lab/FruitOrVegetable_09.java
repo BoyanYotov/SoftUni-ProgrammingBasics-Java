@@ -3,12 +3,12 @@ package ConditionalStatementsAdvanced_03.Lab;
 import java.util.Scanner;
 
 public class FruitOrVegetable_09 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         String fruitOrVegetable = scanner.nextLine();
 
-        switch (fruitOrVegetable){
+        switch (fruitOrVegetable) {
             case "banana":
             case "apple":
             case "kiwi":
@@ -17,10 +17,11 @@ public class FruitOrVegetable_09 {
             case "grapes":
                 System.out.print("fruit");
                 break;
-            case "tomato","cucumber","pepper","carrot":
+            case "tomato", "cucumber", "pepper", "carrot":
                 System.out.print("vegetable");
                 break;
-            default:System.out.print("unknown");
+            default:
+                System.out.print("unknown");
         }
 
     }

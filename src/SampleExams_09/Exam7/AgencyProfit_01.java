@@ -17,6 +17,6 @@ public class AgencyProfit_01 {
         double priceAdults = priceAdult + serviceFee;
         double totalProfit = ((priceAdults * ticketsAdults) + (priceKids * ticketsKids)) * 0.2;
 
-        System.out.printf("The profit of your agency from %s tickets is %.2f lv.",name,totalProfit);
+        System.out.printf("The profit of your agency from %s tickets is %.2f lv.", name, totalProfit);
     }
 }

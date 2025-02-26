@@ -10,10 +10,10 @@ public class MaxNumber_06 {
         String input = scanner.nextLine();
         int maxValue = Integer.MIN_VALUE;
 
-        while (!input.equals("Stop")){
+        while (!input.equals("Stop")) {
             int number = Integer.parseInt(input);
 
-            if (number > maxValue){
+            if (number > maxValue) {
                 maxValue = number;
             }
 

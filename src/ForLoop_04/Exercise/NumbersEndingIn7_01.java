@@ -7,7 +7,7 @@ public class NumbersEndingIn7_01 {
 
         Scanner scanner = new Scanner(System.in);
 
-        for (int i = 7; i <= 997 ; i+=10) {
+        for (int i = 7; i <= 997; i += 10) {
             System.out.println(i);
         }
 

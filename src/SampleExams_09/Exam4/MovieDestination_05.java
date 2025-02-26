@@ -12,23 +12,23 @@ public class MovieDestination_05 {
         int days = Integer.parseInt(scanner.nextLine());
         double dailyPrice = 0;
 
-        switch (destination){
+        switch (destination) {
             case "Dubai":
-                if (season.equals("Winter")){
-                dailyPrice = 45000;
-            } else {
+                if (season.equals("Winter")) {
+                    dailyPrice = 45000;
+                } else {
                     dailyPrice = 40000;
                 }
                 break;
             case "Sofia":
-                if (season.equals("Winter")){
+                if (season.equals("Winter")) {
                     dailyPrice = 17000;
                 } else {
                     dailyPrice = 12500;
                 }
                 break;
             case "London":
-                if (season.equals("Winter")){
+                if (season.equals("Winter")) {
                     dailyPrice = 24000;
                 } else {
                     dailyPrice = 20250;
@@ -38,16 +38,16 @@ public class MovieDestination_05 {
 
         double total = days * dailyPrice;
 
-        if (destination.equals("Dubai")){
+        if (destination.equals("Dubai")) {
             total *= 0.7;
-        } else if (destination.equals("Sofia")){
+        } else if (destination.equals("Sofia")) {
             total *= 1.25;
         }
 
-        if (budget < total){
-            System.out.printf("The director needs %.2f leva more!",total - budget);
+        if (budget < total) {
+            System.out.printf("The director needs %.2f leva more!", total - budget);
         } else {
-            System.out.printf("The budget for the movie is enough! We have %.2f leva left!",budget - total);
+            System.out.printf("The budget for the movie is enough! We have %.2f leva left!", budget - total);
         }
     }
 }

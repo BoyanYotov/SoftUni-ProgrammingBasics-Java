@@ -17,7 +17,7 @@ public class FootballLeague_07 {
         for (int i = 1; i <= fansQuantity; i++) {
             String sector = scanner.nextLine();
 
-            if (sector.equals("A")){
+            if (sector.equals("A")) {
                 sectorAFans++;
             } else if (sector.equals("B")) {
                 sectorBFans++;
@@ -33,10 +33,10 @@ public class FootballLeague_07 {
         double percentageC = sectorCFans * 1.0 / fansQuantity * 100;
         double percentageD = sectorDFans * 1.0 / fansQuantity * 100;
 
-        System.out.printf("%.2f%%%n",percentageA);
-        System.out.printf("%.2f%%%n",percentageB);
-        System.out.printf("%.2f%%%n",percentageC);
-        System.out.printf("%.2f%%%n",percentageD);
+        System.out.printf("%.2f%%%n", percentageA);
+        System.out.printf("%.2f%%%n", percentageB);
+        System.out.printf("%.2f%%%n", percentageC);
+        System.out.printf("%.2f%%%n", percentageD);
         System.out.printf("%.2f%%", fansQuantity * 1.0 / capacityStadium * 100);
 
     }

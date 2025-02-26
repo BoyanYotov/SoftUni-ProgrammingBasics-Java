@@ -9,8 +9,8 @@ public class EvenPowersOf2_04 {
 
         int n = Integer.parseInt(scanner.nextLine());
 
-        for (int i = 0; i <=n ; i+=2) {
-            System.out.println(Math.pow(2,i));
+        for (int i = 0; i <= n; i += 2) {
+            System.out.println(Math.pow(2, i));
         }
 
     }

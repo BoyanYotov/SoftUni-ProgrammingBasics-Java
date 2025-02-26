@@ -9,19 +9,19 @@ public class CinemaTickets_06 {
         String movieName = scanner.nextLine();
         int studentTickets = 0;
         int standardTickets = 0;
-        int kidTickets =0;
+        int kidTickets = 0;
         int soldTickets = 0;
 
-        while (!movieName.equals("Finish")){
+        while (!movieName.equals("Finish")) {
             int intialPlaces = Integer.parseInt(scanner.nextLine());
             int freePlaces = intialPlaces;
 
-            while (freePlaces>0){
+            while (freePlaces > 0) {
                 String type = scanner.nextLine();
-                if (type.equals("End")){
+                if (type.equals("End")) {
                     break;
                 }
-                switch (type){
+                switch (type) {
                     case "student":
                         studentTickets++;
                         soldTickets++;
@@ -38,13 +38,13 @@ public class CinemaTickets_06 {
                 freePlaces--;
             }
 
-            System.out.printf("%s - %.2f%% full.%n", movieName,(intialPlaces-freePlaces)*1.0/intialPlaces*100);
+            System.out.printf("%s - %.2f%% full.%n", movieName, (intialPlaces - freePlaces) * 1.0 / intialPlaces * 100);
             movieName = scanner.nextLine();
         }
 
-        System.out.printf("Total tickets: %d%n",soldTickets);
-        System.out.printf("%.2f%% student tickets.%n",studentTickets * 1.0 / soldTickets * 100);
-        System.out.printf("%.2f%% standard tickets.%n",standardTickets * 1.0 / soldTickets * 100);
-        System.out.printf("%.2f%% kids tickets.",kidTickets * 1.0 / soldTickets * 100);
+        System.out.printf("Total tickets: %d%n", soldTickets);
+        System.out.printf("%.2f%% student tickets.%n", studentTickets * 1.0 / soldTickets * 100);
+        System.out.printf("%.2f%% standard tickets.%n", standardTickets * 1.0 / soldTickets * 100);
+        System.out.printf("%.2f%% kids tickets.", kidTickets * 1.0 / soldTickets * 100);
     }
 }

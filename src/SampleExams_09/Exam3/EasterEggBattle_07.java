@@ -11,30 +11,31 @@ public class EasterEggBattle_07 {
 
         String command = scanner.nextLine();
 
-        while (!command.equals("End")){
+        while (!command.equals("End")) {
 
-            if (command.equals("one")){
+            if (command.equals("one")) {
                 eggsTwo--;
-            } if (command.equals("two")){
+            }
+            if (command.equals("two")) {
                 eggsOne--;
             }
 
-            if (eggsOne <= 0 || eggsTwo <= 0){
+            if (eggsOne <= 0 || eggsTwo <= 0) {
                 break;
             }
 
             command = scanner.nextLine();
         }
 
-        if (command.equals("End")){
-            System.out.printf("Player one has %d eggs left.%n",eggsOne);
-            System.out.printf("Player two has %d eggs left.",eggsTwo);
+        if (command.equals("End")) {
+            System.out.printf("Player one has %d eggs left.%n", eggsOne);
+            System.out.printf("Player two has %d eggs left.", eggsTwo);
         }
 
         if (eggsOne == 0) {
-            System.out.printf("Player one is out of eggs. Player two has %d eggs left.",eggsTwo);
-        } else if (eggsTwo == 0){
-            System.out.printf("Player two is out of eggs. Player one has %d eggs left.",eggsOne);
+            System.out.printf("Player one is out of eggs. Player two has %d eggs left.", eggsTwo);
+        } else if (eggsTwo == 0) {
+            System.out.printf("Player two is out of eggs. Player one has %d eggs left.", eggsOne);
         }
 
     }

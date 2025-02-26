@@ -47,16 +47,17 @@ public class FruitShop_11 {
                 } else if (fruit.equals("pineapple")) {
                     price = quantity * 5.60;
                 } else if (fruit.equals("grapes")) {
-                    price = quantity * 4.20; }
-                else {
+                    price = quantity * 4.20;
+                } else {
                     validInput = false;
                 }
                 break;
-                default: validInput = false;
+            default:
+                validInput = false;
         }
 
-        if (validInput){
-            System.out.printf("%.2f",price);
+        if (validInput) {
+            System.out.printf("%.2f", price);
         } else {
             System.out.print("error");
         }

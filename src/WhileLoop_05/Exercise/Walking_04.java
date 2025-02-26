@@ -10,10 +10,10 @@ public class Walking_04 {
         String command = "";
         int totalSteps = 0;
 
-        while (totalSteps < 10000){
+        while (totalSteps < 10000) {
             command = scanner.nextLine();
 
-            if (command.equals("Going home")){
+            if (command.equals("Going home")) {
                 int lastSteps = Integer.parseInt(scanner.nextLine());
                 totalSteps += lastSteps;
                 break;
@@ -23,11 +23,11 @@ public class Walking_04 {
             totalSteps += steps;
         }
 
-        if (totalSteps < 10000){
-            System.out.printf("%d more steps to reach goal.",10000-totalSteps);
+        if (totalSteps < 10000) {
+            System.out.printf("%d more steps to reach goal.", 10000 - totalSteps);
         } else {
             System.out.println("Goal reached! Good job!");
-            System.out.printf("%d steps over the goal!",totalSteps-10000);
+            System.out.printf("%d steps over the goal!", totalSteps - 10000);
         }
 
     }

@@ -15,12 +15,12 @@ public class EasterGuests_04 {
 
         double total = cakeCost + eggs;
 
-        if (total <= budget){
+        if (total <= budget) {
             System.out.printf("Lyubo bought %.0f Easter bread and %d eggs.%n", cakesQuantity, guestsQuantity * 2);
-            System.out.printf("He has %.2f lv. left.",budget - total);
+            System.out.printf("He has %.2f lv. left.", budget - total);
         } else {
             System.out.println("Lyubo doesn't have enough money.");
-            System.out.printf("He needs %.2f lv. more.",total - budget);
+            System.out.printf("He needs %.2f lv. more.", total - budget);
         }
     }
 }
